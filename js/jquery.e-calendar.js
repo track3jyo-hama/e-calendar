@@ -92,7 +92,7 @@
                 dWeekDayOfMonthStart = 6 - ((dWeekDayOfMonthStart + 1) * -1);
             }
             var dLastDayOfMonth = new Date(dYear, dMonth + 1, 0).getDate();
-            var dLastDayOfPreviousMonth = new Date(dYear, dMonth + 1, 0).getDate() - dWeekDayOfMonthStart + 1;
+            var dLastDayOfPreviousMonth = new Date(dYear, dMonth, 0).getDate() - dWeekDayOfMonthStart + 1;
 
             var cBody = $('<div/>').addClass('c-grid');
             var cEvents = $('<div/>').addClass('c-event-grid');
